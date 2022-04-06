@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+     background : linear-gradient(to right , #000428 , #004e92);
+}
+
+.wrapper{
+    color: whitesmoke;
+    background-color: #335b9c;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 5px;
+    padding:25px;
+    position:relative;
+    left:50%;
+    transform: translate(-50%);
+    margin-top: 100px;
+}
+.wrapper h2{
+    padding-bottom: 10px;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.wrapper .inputBox{
+    display: flex;
+    height: 40px;   
+    margin-left: 6px;
+    margin-bottom: 20px;     
+}
+
+.wrapper .inputBox input {
+    width: 85% ;
+    font-size: 16px;
+    padding-left: 10px;
+    border: 2px solid #1c0133;
+}
+.wrapper .inputBox button {
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 60px;
+    font-size: 21px;
+    background-color: #03016b;
+    color: whitesmoke;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 3px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.wrapper .inputBox button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.wrapper ul {
+    margin-left: 6px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+.wrapper ul li{
+    position: relative;
+    line-height: 45px;  
+    list-style: none;
+    background-color: #03016b;
+    padding: 0px 15px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    overflow: hidden; 
+}
+.wrapper ul li span{
+    position: absolute;
+    right: -45px;
+    background-color: #e74c3c;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.wrapper ul li:hover span{
+ right: 0px;
+}
+.wrapper .footer{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper .footer span{
+    font-size: 18px;
+}
+.wrapper .footer button{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 80px;
+    font-size: 15px;
+    background-color: #03016b;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.wrapper .footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
